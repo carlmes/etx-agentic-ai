@@ -73,7 +73,7 @@ data:
           max_tokens: 110000
           api_token: ${env.LLAMA_4_SCOUT_17B_16E_W4A16_API_TOKEN}
           tls_verify: true
-      - provider_id: vllm-deepseek-r1
+      - provider_id: vllm-deepseek-r1-testing
         provider_type: "remote::vllm"
         config:
           url: "https://deepseek-r1-qwen-14b-w4a16-maas-apicast-production.apps.prod.rhoai.rh-aiservices-bu.com:443/v1"
