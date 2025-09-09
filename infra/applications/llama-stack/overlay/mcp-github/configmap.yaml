@@ -85,7 +85,7 @@ data:
         config:
           url: "https://mistral-small-24b-w8a8-maas-apicast-production.apps.prod.rhoai.rh-aiservices-bu.com:443/v1"
           max_tokens: 110000
-          api_token: ${env.MISTRAL-SMALL-24B-W8A8_API_TOKEN}
+          api_token: ${env.MISTRAL_SMALL_24B_W8A8_API_TOKEN}
           tls_verify: true
       tool_runtime:
       - provider_id: model-context-protocol
