@@ -30,11 +30,11 @@ data:
         provider_id: vllm-llama-4-guard
         provider_model_id: llama-4-scout-17b-16e-w4a16
         model_type: llm
-      #- metadata: {}
-      #  model_id: deepseek-r1-distill-qwen-14b-w4a16
-      #  provider_id: vllm-deepseek-r1
-      #  provider_model_id: r1-qwen-14b-w4a16
-      #  model_type: llm
+      - metadata: {}
+        model_id: deepseek-r1-distill-qwen-14b-w4a16
+        provider_id: vllm-deepseek-r1
+        provider_model_id: r1-qwen-14b-w4a16
+        model_type: llm
       #- metadata: {}
       #  model_id: mistral-small-24b-w8a8
       #  provider_id: vllm-mistral-small
@@ -73,13 +73,13 @@ data:
           max_tokens: 110000
           api_token: ${env.LLAMA_4_SCOUT_17B_16E_W4A16_API_TOKEN}
           tls_verify: true
-      #- provider_id: vllm-deepseek-r1
-      #  provider_type: "remote::vllm"
-      #  config:
-      #    url: "https://deepseek-r1-qwen-14b-w4a16-maas-apicast-production.apps.prod.rhoai.rh-aiservices-bu.com:443/v1"
-      #    max_tokens: 110000
-      #    api_token: ${env.DEEPSEEK-R1-DISTILL-QWEN-14B-W4A16_API_TOKEN}
-      #    tls_verify: true
+      - provider_id: vllm-deepseek-r1
+        provider_type: "remote::vllm"
+        config:
+          url: "https://deepseek-r1-qwen-14b-w4a16-maas-apicast-production.apps.prod.rhoai.rh-aiservices-bu.com:443/v1"
+          max_tokens: 110000
+          api_token: ${env.DEEPSEEK-R1-DISTILL-QWEN-14B-W4A16_API_TOKEN}
+          tls_verify: true
       #- provider_id: vllm-mistral-small
       #  provider_type: "remote::vllm"
       #  config:
