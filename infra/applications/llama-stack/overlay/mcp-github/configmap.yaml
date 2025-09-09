@@ -32,7 +32,7 @@ data:
         model_type: llm
       - metadata: {}
         model_id: deepseek-r1-distill-qwen-14b-w4a16
-        provider_id: vllm-deepseek-r1
+        provider_id: vllm-deepseek-r1-testing
         provider_model_id: r1-qwen-14b-w4a16
         model_type: llm
       - metadata: {}
