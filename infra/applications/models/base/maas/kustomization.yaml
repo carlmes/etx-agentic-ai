@@ -4,4 +4,6 @@ namespace: llama-stack
 resources:
   - llama-3-2-3b-secret.yaml
   - llama-4-scout-17b-16e-w4a16-secret.yaml
+  - deepseek-r1-distill-qwen-14b-w4a16-secret.yaml
+  - mistral-small-24b-w8a8-secret.yaml
   - nomic-embed-text-v1-5-secret.yaml

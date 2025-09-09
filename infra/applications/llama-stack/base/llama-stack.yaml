@@ -29,6 +29,16 @@ spec:
           secretKeyRef:
             name: llama-4-scout-17b-16e-w4a16
             key: apiKey
+      - name: DEEPSEEK-R1-DISTILL-QWEN-14B-W4A16_API_TOKEN
+        valueFrom:
+          secretKeyRef:
+            name: deepseek-r1-distill-qwen-14b-w4a16
+            key: apiKey
+      - name: MISTRAL-SMALL-24B-W8A8_API_TOKEN
+        valueFrom:
+          secretKeyRef:
+            name: mistral-small-24b-w8a8
+            key: apiKey            
       - name: TAVILY_API_KEY
         valueFrom:
           secretKeyRef:
