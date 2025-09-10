@@ -22,22 +22,22 @@ data:
       #  model_type: llm
       - metadata: {}
         model_id: llama-3-2-3b
-        provider_id: vllm-llama-3-2-3b
+        provider_id: llama-3-2
         provider_model_id: llama-3-2-3b
         model_type: llm
       - metadata: {}
         model_id: llama-4-scout-17b-16e-w4a16
-        provider_id: vllm-llama-4-guard
+        provider_id: llama-4
         provider_model_id: llama-4-scout-17b-16e-w4a16
         model_type: llm
       - metadata: {}
         model_id: deepseek-r1-distill-qwen-14b-w4a16
-        provider_id: vllm-deepseek-r1-testing
+        provider_id: deepseek
         provider_model_id: r1-qwen-14b-w4a16
         model_type: llm
       - metadata: {}
         model_id: mistral-small-24b-w8a8
-        provider_id: vllm-mistral-small
+        provider_id: mistral
         provider_model_id: mistral-small-24b-w8a8
         model_type: llm
     providers:
@@ -59,28 +59,28 @@ data:
       #    name: llama3.2:1b
       #    context_length: 4096
       #    tls_verify: false
-      - provider_id: vllm-llama-3-2-3b
+      - provider_id: llama-3-2
         provider_type: "remote::vllm"
         config:
           url: "https://llama-3-2-3b-maas-apicast-production.apps.prod.rhoai.rh-aiservices-bu.com:443/v1"
           max_tokens: 110000
           api_token: ${env.LLAMA_3_2_3B_API_TOKEN}
           tls_verify: true
-      - provider_id: vllm-llama-4-guard
+      - provider_id: llama-4
         provider_type: "remote::vllm"
         config:
           url: "https://llama-4-scout-17b-16e-w4a16-maas-apicast-production.apps.prod.rhoai.rh-aiservices-bu.com:443/v1"
           max_tokens: 110000
           api_token: ${env.LLAMA_4_SCOUT_17B_16E_W4A16_API_TOKEN}
           tls_verify: true
-      - provider_id: vllm-deepseek-r1-testing
+      - provider_id: deepseek
         provider_type: "remote::vllm"
         config:
           url: "https://deepseek-r1-qwen-14b-w4a16-maas-apicast-production.apps.prod.rhoai.rh-aiservices-bu.com:443/v1"
           max_tokens: 110000
           api_token: ${env.DEEPSEEK_R1_DISTILL_QWEN_14B_W4A16_API_TOKEN}
           tls_verify: true
-      - provider_id: vllm-mistral-small
+      - provider_id: mistral
         provider_type: "remote::vllm"
         config:
           url: "https://mistral-small-24b-w8a8-maas-apicast-production.apps.prod.rhoai.rh-aiservices-bu.com:443/v1"
