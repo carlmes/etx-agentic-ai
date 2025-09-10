@@ -31,14 +31,14 @@ data:
         provider_model_id: llama-4-scout-17b-16e-w4a16
         model_type: llm
       - metadata: {}
-        model_id: deepseek-r1-distill-qwen-14b-w4a16
-        provider_id: deepseek
-        provider_model_id: r1-qwen-14b-w4a16
-        model_type: llm
-      - metadata: {}
         model_id: mistral-small-24b-w8a8
         provider_id: mistral
         provider_model_id: mistral-small-24b-w8a8
+        model_type: llm
+      - metadata: {}
+        model_id: deepseek-r1-distill-qwen-14b-w4a16
+        provider_id: deepseek
+        provider_model_id: r1-qwen-14b-w4a16
         model_type: llm
     providers:
       agents:
