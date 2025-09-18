@@ -27,4 +27,4 @@ policyDefaults:
 policies:
   - name: llama-stack-playground-sno
     manifests:
-      - path: mcp-openshift/
+      - path: sno/
